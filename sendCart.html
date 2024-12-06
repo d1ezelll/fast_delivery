@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Delivery Menu</title>
+    <link type="image/x-icon" href="./img/logo.svg" rel="shortcut icon">
+    <link type="Image/x-icon" href="./img/logo.svg" rel="icon">
+    <link rel="stylesheet" href="./css/sendCartStyles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-top">
+                    <div class="header-left">
+                        <a href="#" class="header-logo">
+                            <img src="./img/header_logo.svg" alt="Логотип" class="header-logo-img">
+                        </a>
+        
+                        <a href="./index.html" class="header-delivery-type">
+                            Доставка Чебоксары и Новочебоксарск (с 9:00 до 22:50)
+                        </a>
+                    </div>
+    
+                    <p class="header-phone-number">+7 (262) 162-62-15</p>
+                </div>
+    
+                <div class="header-bottom">
+                    <ul class="header-menu">
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Завтраки</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Популярные блюда и Новинки!</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Шаурма и Гиросы</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Пиццы</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Роллы</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Бургеры</li>
+                        </a>
+    
+                    </ul>
+    
+                    <button class="header-cart-button">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.3374 13.8333V3.83329H1.67074V2.16663H4.17074C4.63098 2.16663 5.00407 2.53973 5.00407 2.99996V13H15.3694L17.0361 6.33329H6.67074V4.66663H18.1034C18.5637 4.66663 18.9368 5.03973 18.9368 5.49996C18.9368 5.56809 18.9284 5.63598 18.9118 5.70208L16.8285 14.0354C16.7358 14.4064 16.4025 14.6666 16.0201 14.6666H4.17074C3.7105 14.6666 3.3374 14.2935 3.3374 13.8333ZM5.00407 19.6666C4.0836 19.6666 3.3374 18.9205 3.3374 18C3.3374 17.0795 4.0836 16.3333 5.00407 16.3333C5.92455 16.3333 6.67074 17.0795 6.67074 18C6.67074 18.9205 5.92455 19.6666 5.00407 19.6666ZM15.0041 19.6666C14.0836 19.6666 13.3374 18.9205 13.3374 18C13.3374 17.0795 14.0836 16.3333 15.0041 16.3333C15.9246 16.3333 16.6708 17.0795 16.6708 18C16.6708 18.9205 15.9246 19.6666 15.0041 19.6666Z" fill="white"/>
+                        </svg>
+                            
+                        <span>Корзина пуста</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="order">
+                <div class="order-container">
+                    <h1 class="order-title">Оформление заказа</h1>
+                    <form action="POST" class="order-form">
+                        <div class="order-form-top">
+                            <div class="form-name">
+                                <label for="order-name">Как к вам обращаться</label>
+                                <input id="order-name" type="text" class="order-name" placeholder="Ваше имя">
+                            </div>
+                            
+                            <div class="form-number">
+                                <label for="order-number">Ваш номер телефона</label>
+                                <input id="order-number" type="number" class="order-number" placeholder="+7 (999) 999-99-99">
+                            </div>
+                            
+                            <div class="form-count-person">
+                                <label for="order-count-person">Количество персон</label>
+                                <input id="order-count-person" type="number" class="order-count-person" placeholder="1">
+                            </div>
+                        </div>
+
+                        <p class="form-adres-text">По какому адресу доставить заказ</p>
+
+                        <div class="order-form-mid">
+                            <input id="order-adres" type="text" class="order-adres" placeholder="Улица">
+                            <input id="order-adres-second" type="text" class="order-adres-second" placeholder="Улица">
+                            <input id="order-date" type="date" class="order-date" placeholder="15.02.2024">
+                        </div>
+
+                        <div class="order-form-bottom" style="align-items: center;">
+                            <input id="order-flat" type="number" class="order-flat" placeholder="Квартира/Офис">
+                            <input id="order-entrance" type="number" class="order-entrance" placeholder="Подъезд">
+                            <input id="order-floor" type="number" class="order-floor" placeholder="Этаж">
+
+                            <label for="">Комментарий к заказу</label>
+                        </div>
+
+                        <div class="order-form-send">
+                            <a href="./thanksPage.html" class="order-button">Оформить заказ</a>
+
+                            <input id="order-comment" type="text" placeholder="Например: код домофона">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

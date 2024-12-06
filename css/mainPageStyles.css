@@ -1,0 +1,361 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Shop Cart styles start */
+
+.shop-cart {
+    position: fixed;
+    z-index: 3;
+    width: 370px;
+    min-height: 500px;
+    background: rgb(255, 255, 255);
+    right: -370px;
+    font-family: SF Pro Display;
+    transition: transform 1s;
+    transform: translateX(370px);
+}
+
+.shop-cart.open {
+    transition: transform 0.5s;
+    transform: translateX(-370px);
+}
+
+.shop-cart-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.shop-cart-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.shop-cart-item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.shop-cart-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.shop-cart-texts {
+    max-width: 240px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.shop-cart-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-cart-counter {
+    border: 1px solid black;
+    border-radius: 120px;
+    padding: 8px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.shop-cart-finish {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-cart-result {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.shop-cart-button {
+    font-family: SF Pro Display;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    max-width: 100px;
+    text-align: center;
+}
+
+.nothing-cart {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Shop Cart styles end */
+
+
+/* Header styles start */
+
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+    padding: 40px 40px;
+    font-family: SF Pro Display;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.header-delivery-type {
+    text-decoration: none;
+    color: black;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.header-menu-link:hover {
+    opacity: 0.7;
+}
+
+.header-cart-button {
+    border: none;
+    background: #120E1F;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.header-cart-button:hover {
+    opacity: 0.7;
+}
+
+/* Header styles end */
+
+/* Promocode styles start */
+
+.promocode-container {
+    position: relative;
+    background: rgb(0,0,0);
+    background: linear-gradient(220deg, rgba(0,0,0,1) 0%, rgba(23,65,149,1) 100%);
+    max-width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+    padding: 5px 0 5px 50px;
+    font-family: SF Pro Display;
+}
+
+.promocode-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.promocode-subtitle {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.promocode-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.promocode-subtitle-code {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.promocode-subtitle-code span {
+    font-weight: 700;
+}
+
+.promocode-sale {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.promocode-prize-img {
+    max-width: 100%;
+}
+
+/* Promocode styles end */
+
+/* Products styles start */
+
+.products {
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    font-family: SF Pro Display;
+}
+
+.products-type-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 30px;
+}
+
+
+.products-type-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products-grid-item {
+    max-width: 265px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.products-grid-item-img:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.products-grid-item-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.products-grid-item-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+}
+
+.products-grid-item-weight {
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+}
+
+.products-grid-item-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-grid-price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.products-grid-button {
+    font-family: SF Pro Display;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.products-grid-button:hover {
+    opacity: 0.7;
+}
+
+
+/* Products styles end */

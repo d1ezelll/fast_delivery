@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Delivery Menu</title>
+    <link type="image/x-icon" href="./img/logo.svg" rel="shortcut icon">
+    <link type="Image/x-icon" href="./img/logo.svg" rel="icon">
+    <link rel="stylesheet" href="./css/mainPageStyles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="shop-cart">
+        <div class="shop-cart-container">
+            <!-- <div class="shop-cart-div"> -->
+                <span style="margin-bottom: 20px;" class="nothing-cart">В Корзине ничего нет</span>
+                <!-- <div class="shop-cart-list">
+                    <div class="shop-cart-item">
+                        <img src="./img/food_card_photo/cheese_roll.png" alt="Ролл сырный" class="shop-cart-img">
+        
+                        <div class="shop-cart-texts">
+                            <p class="shop-cart-title">Ролл сырный</p>
+                            <p class="shop-cart-description">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                            
+                            
+                            <div class="shop-cart-bottom">
+                                <div class="shop-cart-counter">
+                                    <span class="shop-cart-delete">-</span>
+                                    <span class="shop-cart-count">1</span>
+                                    <span class="shop-cart-add">+</span>
+                                </div>
+            
+                                <span class="shop-cart-price">200₽</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="shop-cart-item">
+                        <img src="./img/food_card_photo/cheese_roll.png" alt="Ролл сырный" class="shop-cart-img">
+        
+                        <div class="shop-cart-texts">
+                            <p class="shop-cart-title">Ролл сырный</p>
+                            <p class="shop-cart-description">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                            
+                            
+                            <div class="shop-cart-bottom">
+                                <div class="shop-cart-counter">
+                                    <span class="shop-cart-delete">-</span>
+                                    <span class="shop-cart-count">1</span>
+                                    <span class="shop-cart-add">+</span>
+                                </div>
+            
+                                <span class="shop-cart-price">200₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="shop-cart-finish">
+                    <span class="shop-card-finish-text">Сумма</span>
+                    <span class="shop-card-finish-price">1400₽</span>
+                </div>-->
+    
+                <!-- <a href="./sendCart.html" class="shop-cart-button">Заказать</a>  -->
+            <!-- </div> -->
+            <div class="shop-cart-result">
+                <div class="shop-cart-finish" >
+                    <span class="shop-card-finish-text">Сумма</span>
+                    <span class="shop-card-finish-price">0</span>
+                </div>
+        
+                <a href="./sendCart.html" class="shop-cart-button">Заказать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-top">
+                    <div class="header-left">
+                        <a href="#" class="header-logo">
+                            <img src="./img/header_logo.svg" alt="Логотип" class="header-logo-img">
+                        </a>
+        
+                        <a href="./index.html" class="header-delivery-type">
+                            Доставка Чебоксары и Новочебоксарск (с 9:00 до 22:50)
+                        </a>
+                    </div>
+    
+                    <p class="header-phone-number">+7 (262) 162-62-15</p>
+                </div>
+    
+                <div class="header-bottom">
+                    <ul class="header-menu">
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Завтраки</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Популярные блюда и Новинки!</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Шаурма и Гиросы</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Пиццы</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Роллы</li>
+                        </a>
+    
+                        <a href="#" class="header-menu-link">
+                            <li class="header-menu-link-item">Бургеры</li>
+                        </a>
+    
+                    </ul>
+    
+                    <button class="header-cart-button">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.3374 13.8333V3.83329H1.67074V2.16663H4.17074C4.63098 2.16663 5.00407 2.53973 5.00407 2.99996V13H15.3694L17.0361 6.33329H6.67074V4.66663H18.1034C18.5637 4.66663 18.9368 5.03973 18.9368 5.49996C18.9368 5.56809 18.9284 5.63598 18.9118 5.70208L16.8285 14.0354C16.7358 14.4064 16.4025 14.6666 16.0201 14.6666H4.17074C3.7105 14.6666 3.3374 14.2935 3.3374 13.8333ZM5.00407 19.6666C4.0836 19.6666 3.3374 18.9205 3.3374 18C3.3374 17.0795 4.0836 16.3333 5.00407 16.3333C5.92455 16.3333 6.67074 17.0795 6.67074 18C6.67074 18.9205 5.92455 19.6666 5.00407 19.6666ZM15.0041 19.6666C14.0836 19.6666 13.3374 18.9205 13.3374 18C13.3374 17.0795 14.0836 16.3333 15.0041 16.3333C15.9246 16.3333 16.6708 17.0795 16.6708 18C16.6708 18.9205 15.9246 19.6666 15.0041 19.6666Z" fill="white"/>
+                        </svg>
+                            
+                        <span>Корзина пуста</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="promocode">
+                <div class="promocode-container">
+                    <div class="promocode-left">
+                        <h1 class="promocode-title">С ДНЕМ РОЖДЕНИЯ!</h1>
+
+                        <div class="promocode-subtitle">
+                            <span class="promocode-sale">Скидка 10%</span>
+
+                            <div class="promocode-subtitle-texts">
+                                <p class="promocode-subtitle-code">Промокод: <span>FASTDELIVERY</span></p>
+                                <p class="promocode-subtitle-code">При заказе от 2500₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promocode-right">
+                        <img src="./img/prizes.svg" alt="" class="promocode-prize-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="products-container">
+                    <div class="products-type-wrapper">
+                        <h1 class="products-type-title">Завтраки</h1>
+
+                        <div class="products-grid">
+                            <div id="sandwich" class="products-grid-item">
+                                <img src="./img/food_card_photo/sandwich.png" alt="Сендвич с ветчиной" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Сендвич с ветчиной</p>
+                                <p class="products-grid-item-subtitle">4 кусочка хлеба для тостов, 2–4 ломтика ветчины, помидор, авокадо, зеленый салат, майонез</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">300₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="scramble" class="products-grid-item">
+                                <img src="./img/food_card_photo/scramble.png" alt="Омлет" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Омлет</p>
+                                <p class="products-grid-item-subtitle">Яйца куриные 3 шт, молоко - 150 мл, соль-2 щепотки, масло Есливочное 30 г</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">200₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="salad_bangkok" class="products-grid-item">
+                                <img src="./img/food_card_photo/salad_bangkok.png" alt="Салат Бангкок" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Салат "Бангкок"</p>
+                                <p class="products-grid-item-subtitle">Куриное филе, рис, салат микс, огурцы, помидоры, грибы шиитаке, соус бангкок</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">300₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="cheese_roll" class="products-grid-item">
+                                <img src="./img/food_card_photo/cheese_roll.png" alt="Ролл Сырный" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Ролл Сырный</p>
+                                <p class="products-grid-item-subtitle">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                                <p class="products-grid-item-weight">200г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">300₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="products-type-title">Популярные блюда и новинки!</h1>
+
+                        <div class="products-grid">
+                            <div id="shawarma_pig" class="products-grid-item">
+                                <img src="./img/food_card_photo/shawarma_pig.png" alt="Шаурма Шриль со свининой" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Шаурма Шриль со свининой</p>
+                                <p class="products-grid-item-subtitle">Лаваш, свинина, перец болгарский, кабачок гриль, морковь гриль</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">500₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="cole_slaw" class="products-grid-item">
+                                <img src="./img/food_card_photo/cole_slaw.png" alt="Салат Коул Слоу" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Салат "Коул Слоу"</p>
+                                <p class="products-grid-item-subtitle">Капуста фреш (капуста, огурцы, морковь), соус Коул-Слоу</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">150₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="napoleon" class="products-grid-item">
+                                <img src="./img/food_card_photo/napoleon.png" alt="Наполеон" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Наполеон</p>
+                                <p class="products-grid-item-subtitle">Тесто слоеное, крем (сгущенное молоко, яйцо, молоко, масло сливочное, мука)</p>
+                                <p class="products-grid-item-weight">1500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">200₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="choko_desert" class="products-grid-item">
+                                <img src="./img/food_card_photo/choko_desert.png" alt="Шоколадный десерт" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Шоколадный десерт</p>
+                                <p class="products-grid-item-subtitle">Бисквит (мука, яйцо, какао- порошок, масло сливочное, сахар), карамель</p>
+                                <p class="products-grid-item-weight">140г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">260₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="products-type-title">Шаурма и гиросы</h1>
+
+                        <div class="products-grid">
+                            <div id="shawarma_pig" class="products-grid-item">
+                                <img src="./img/food_card_photo/shawarma_pig.png" alt="Шаурма Шриль со свининой" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Шаурма Шриль со свининой</p>
+                                <p class="products-grid-item-subtitle">Лаваш, свинина, перец болгарский, кабачок гриль, морковь гриль</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">500₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                            
+                            <div id="shawarma_pig" class="products-grid-item">
+                                <img src="./img/food_card_photo/shawarma_pig.png" alt="Шаурма Шриль со свининой" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Шаурма Шриль со свининой</p>
+                                <p class="products-grid-item-subtitle">Лаваш, свинина, перец болгарский, кабачок гриль, морковь гриль</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">500₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="shawarma_pig" class="products-grid-item">
+                                <img src="./img/food_card_photo/shawarma_pig.png" alt="Шаурма Шриль со свининой" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Шаурма Шриль со свининой</p>
+                                <p class="products-grid-item-subtitle">Лаваш, свинина, перец болгарский, кабачок гриль, морковь гриль</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">500₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="shawarma_pig" class="products-grid-item">
+                                <img src="./img/food_card_photo/shawarma_pig.png" alt="Шаурма Шриль со свининой" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Шаурма Шриль со свининой</p>
+                                <p class="products-grid-item-subtitle">Лаваш, свинина, перец болгарский, кабачок гриль, морковь гриль</p>
+                                <p class="products-grid-item-weight">500г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">500₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="products-type-title">Пиццы</h1>
+
+                        <div class="products-grid">
+                            <div id="pizza" class="products-grid-item">
+                                <img src="./img/food_card_photo/pizza_ham_mushrooms.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Пицца</p>
+                                <p class="products-grid-item-subtitle">Грибы, ветчина, сыр моцарелла, белый соус, укроп</p>
+                                <p class="products-grid-item-weight">560г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">490₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                            
+                            <div id="pizza" class="products-grid-item">
+                                <img src="./img/food_card_photo/pizza_ham_mushrooms.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Пицца</p>
+                                <p class="products-grid-item-subtitle">Грибы, ветчина, сыр моцарелла, белый соус, укроп</p>
+                                <p class="products-grid-item-weight">560г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">490₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="pizza" class="products-grid-item">
+                                <img src="./img/food_card_photo/pizza_ham_mushrooms.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Пицца</p>
+                                <p class="products-grid-item-subtitle">Грибы, ветчина, сыр моцарелла, белый соус, укроп</p>
+                                <p class="products-grid-item-weight">560г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">490₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="pizza" class="products-grid-item">
+                                <img src="./img/food_card_photo/pizza_ham_mushrooms.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Пицца</p>
+                                <p class="products-grid-item-subtitle">Грибы, ветчина, сыр моцарелла, белый соус, укроп</p>
+                                <p class="products-grid-item-weight">560г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">490₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="products-type-title">Роллы</h1>
+
+                        <div class="products-grid">
+                            <div id="cheese_roll" class="products-grid-item">
+                                <img src="./img/food_card_photo/cheese_roll.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Ролл Сырный</p>
+                                <p class="products-grid-item-subtitle">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                                <p class="products-grid-item-weight">200г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">280₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                            
+                            <div id="cheese_roll" class="products-grid-item">
+                                <img src="./img/food_card_photo/cheese_roll.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Ролл Сырный</p>
+                                <p class="products-grid-item-subtitle">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                                <p class="products-grid-item-weight">200г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">280₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="cheese_roll" class="products-grid-item">
+                                <img src="./img/food_card_photo/cheese_roll.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Ролл Сырный</p>
+                                <p class="products-grid-item-subtitle">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                                <p class="products-grid-item-weight">200г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">280₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="cheese_roll" class="products-grid-item">
+                                <img src="./img/food_card_photo/cheese_roll.png" alt="Пицца" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Ролл Сырный</p>
+                                <p class="products-grid-item-subtitle">Рис, нори, авокадо, творожный сыр, сыр Чеддер, соус динамайт (майонез, соус кимчи, мед)</p>
+                                <p class="products-grid-item-weight">200г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">280₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="products-type-title">Бургеры</h1>
+
+                        <div class="products-grid">
+                            <div id="chiken_burger" class="products-grid-item">
+                                <img src="./img/food_card_photo/chiken_burger.png" alt="Бургер" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Chiken Бургер</p>
+                                <p class="products-grid-item-subtitle">Курица в панировке, салат, томат, свежий лук, булочка, соус Цезарь, соус гриль</p>
+                                <p class="products-grid-item-weight">280г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">320₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                            
+                            <div id="chiken_burger" class="products-grid-item">
+                                <img src="./img/food_card_photo/chiken_burger.png" alt="Бургер" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Chiken Бургер</p>
+                                <p class="products-grid-item-subtitle">Курица в панировке, салат, томат, свежий лук, булочка, соус Цезарь, соус гриль</p>
+                                <p class="products-grid-item-weight">280г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">320₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="chiken_burger" class="products-grid-item">
+                                <img src="./img/food_card_photo/chiken_burger.png" alt="Бургер" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Chiken Бургер</p>
+                                <p class="products-grid-item-subtitle">Курица в панировке, салат, томат, свежий лук, булочка, соус Цезарь, соус гриль</p>
+                                <p class="products-grid-item-weight">280г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">320₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+
+                            <div id="chiken_burger" class="products-grid-item">
+                                <img src="./img/food_card_photo/chiken_burger.png" alt="Бургер" class="products-grid-item-img">
+                                
+                                <p class="products-grid-item-title">Chiken Бургер</p>
+                                <p class="products-grid-item-subtitle">Курица в панировке, салат, томат, свежий лук, булочка, соус Цезарь, соус гриль</p>
+                                <p class="products-grid-item-weight">280г</p>
+                                
+                                <div class="products-grid-item-bottom">
+                                    <p class="products-grid-price">320₽</p>
+                                    <button class="products-grid-button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
