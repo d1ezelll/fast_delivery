@@ -22,6 +22,7 @@
     font-family: SF Pro Display;
     transition: transform 1s;
     transform: translateX(370px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .shop-cart.open {
