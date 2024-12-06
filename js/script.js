@@ -2,7 +2,7 @@
 const allPage = document.querySelector('.wrapper');
 const cart = document.querySelector('.shop-cart');
 const openCartButton = document.querySelector('.header-cart-button');
-const cartList = document.querySelector('.shop-cart-container');
+const cartList = document.querySelector('.shop-cart-list');
 const addToCartButton = document.querySelectorAll('.products-grid-button');
 const productList = document.querySelector('.products-type-wrapper')
 
@@ -61,15 +61,13 @@ addProductToCard();
 
 const renderProductInCart = () => {
     const div = document.createElement('div');
-    div.classList.add('shop-cart-div');
+    div.classList.add('shop-cart-item');
 
     const nothingMessage = document.querySelector('.nothing-cart');
 
     nothingMessage.style.display = 'none';
 
     div.innerHTML = `
-    <div class="shop-cart-list">
-        <div class="shop-cart-item">
             <img src="${productInfo.image}" alt="${productInfo.title}" class="shop-cart-img">
             
             <div class="shop-cart-texts">
@@ -87,32 +85,9 @@ const renderProductInCart = () => {
                     <span class="shop-cart-price" data-price = "${productInfo.price}">${productInfo.price}</span>
                 </div>
             </div>
-        </div>
-    </div>
     `;
 
     cartList.append(div);
 };
-
-const calculateTotalCartValue = () => {
-    const cartItems = document.querySelector('.shop-cart-item');
-    const cartTotalPrice = document.querySelector('.shop-card-finish-price');
-
-    let totalCartValue = 0;
-
-    cartItems.forEach((item) => {
-        const itemCount = item.querySelector('.shop-cart-count');
-
-        const itemPrice = item.querySelector('.shop-cart-price');
-
-        const itemTotalPrice = parseInt(itemCount.textContent) * parseInt(itemPrice.textContent.split(' ').join(''));
-        
-        totalCartValue += itemTotalPrice;
-    });
-
-    cartTotalPrice.textContent = totalCartValue;
-};
-calculateTotalCartValue();
-
 
 // Cart script

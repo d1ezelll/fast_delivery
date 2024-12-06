@@ -47,6 +47,10 @@
     row-gap: 20px;
 }
 
+.shop-cart-list {
+    flex-grow: 1;
+}
+
 .shop-cart-item {
     display: flex;
     flex-wrap: nowrap;
