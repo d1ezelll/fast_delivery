@@ -129,6 +129,20 @@
     font-size: 30px;
 }
 
+.shop-cart-delete {
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.shop-cart-add {
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
 /* Shop Cart styles end */
 
 
@@ -140,7 +154,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     row-gap: 20px;
-    padding: 40px 40px;
+    padding: 40px 0px;
     font-family: SF Pro Display;
 }
 
